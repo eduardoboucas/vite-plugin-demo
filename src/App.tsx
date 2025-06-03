@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ShapeEditor from "./ShapeEditor";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <h1 className="mb-10">Blobs x Blobs</h1>
+      <div className="explainer mb-12">
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          <a href="https://docs.netlify.com/blobs/overview/">Netlify Blobs</a>{" "}
+          provides an object store for any kind of data, be it JSON, binary, or{" "}
+          <a href="https://mk.gg/projects/chalkstream">really</a> anything else
+          (<a href="https://mk.gg/projects/turbofan">really!</a>). In this
+          example, the blob store is used to{" "}
+          <strong>hold the data of user-generated random blobby shapes</strong>.
+        </p>
+        <p>
+          Below is an Astro island with a React component for editing, uploading
+          and viewing blobs to the blob store 🙂.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ShapeEditor />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
