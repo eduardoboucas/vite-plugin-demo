@@ -6,7 +6,7 @@ function App() {
       <h1 className="mt-8 mb-10">Netlify Vite Plugin Demo</h1>
       <div className="explainer mb-12">
         <p className="flex flex-row justify-center">
-          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/vite-plugin-demo">
+          <a href="https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/vite-plugin-demo">
             <img src="https://www.netlify.com/img/deploy/button.svg" />
           </a>
         </p>
