@@ -2,7 +2,7 @@
 
 This is a demo site that showcases the new Netlify Vite plugin, which provides local development with Netlify platform features without requiring the Netlify CLI. The plugin offers seamless emulation of the Netlify platform right in your local development environment for any Vite-based frameworks.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/vite-plugin-demo)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eduardoboucas/vite-plugin-demo)
 
 Click the button above to create a copy of this repo and deploy it to your Netlify account.
 
