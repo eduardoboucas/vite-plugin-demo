@@ -18,3 +18,21 @@ Click the button above to create a copy of this repo and deploy it to your Netli
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) for Fast Refresh
 - [@netlify/vite-plugin](https://github.com/netlify/primitives/tree/main/packages/vite-plugin)
   emulates the Netlify environment and platform primitives in local development
+
+## Development
+
+### Prerequisites
+
+To get started, install dependencies:
+
+```sh
+npm install
+```
+
+### Local dev
+
+To start the Vite dev server that watches for changes, run:
+
+```sh
+npm run dev
+```
