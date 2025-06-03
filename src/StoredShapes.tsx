@@ -27,7 +27,6 @@ export default function StoredShapes(props: Props) {
 
   const getBlobByKey = async (key: string) => {
     setSelectedKey(key);
-    // const params = new URLSearchParams({ key });
     const response = await fetch(`/api/blob/${key}`, {
       method: "GET",
     });
