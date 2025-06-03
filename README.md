@@ -1,8 +1,15 @@
-# React + TypeScript + Vite
+# Netlify Vite Plugin Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demo site that showcases the new Netlify Vite plugin, which provides local development with Netlify platform features without requiring the Netlify CLI. The plugin offers seamless emulation of the Netlify platform right in your local development environment for any Vite-based frameworks.
 
-Currently, two official plugins are available:
+## Features
+
+- Local development with Netlify platform features
+- No Netlify CLI required
+- Works with any Vite-based framework
+- Seamless emulation of Netlify's platform features
+
+## Technical Stack
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

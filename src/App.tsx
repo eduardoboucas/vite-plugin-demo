@@ -3,19 +3,26 @@ import ShapeEditor from "./ShapeEditor";
 function App() {
   return (
     <>
-      <h1 className="mb-10">Blobs x Blobs</h1>
+      <h1 className="mt-8 mb-10">Netlify Vite Plugin Demo</h1>
       <div className="explainer mb-12">
         <p>
-          <a href="https://docs.netlify.com/blobs/overview/">Netlify Blobs</a>{" "}
-          provides an object store for any kind of data, be it JSON, binary, or{" "}
-          <a href="https://mk.gg/projects/chalkstream">really</a> anything else
-          (<a href="https://mk.gg/projects/turbofan">really!</a>). In this
-          example, the blob store is used to{" "}
-          <strong>hold the data of user-generated random blobby shapes</strong>.
+          Welcome to the demo site for the new{" "}
+          <a href="https://github.com/netlify/primitives/tree/main/packages/vite-plugin">Netlify Vite plugin</a>! This is a vanilla Vite application using React.
+         
         </p>
         <p>
-          Below is an Astro island with a React component for editing, uploading
-          and viewing blobs to the blob store 🙂.
+          This Netlify Vite plugin enables local development with Netlify platform features without requiring
+          the Netlify CLI.
+        </p>
+        <p>
+          Behind the scenes, we're using{" "}
+          <a href="https://docs.netlify.com/functions/overview/">Netlify Functions</a> to read and write these
+          shapes and their names to a persistent data store powered by{" "}
+          <a href="https://docs.netlify.com/blobs/overview/">Netlify Blobs</a>.
+        </p>
+        <p>
+        Click the <strong>Randomize</strong> button below to generate a random shape with a
+        unique name. Then, click <strong>Upload</strong> to save it to the data store.
         </p>
       </div>
       <ShapeEditor />
