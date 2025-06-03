@@ -5,7 +5,7 @@ import { generateBlob } from "./utils";
 import type { BlobProps } from "./types.ts";
 
 interface Props {
-  setLastMutationTime?: Dispatch<SetStateAction<number>>;
+  setLastMutationTime: Dispatch<SetStateAction<number | undefined>>;
 }
 
 export default function NewShape(props: Props) {
@@ -19,6 +19,9 @@ export default function NewShape(props: Props) {
   };
 
   const uploadBlob = async () => {
+    if (!blobData) {
+      throw new Error("todo:");
+    }
     const response = await fetch("/api/blobs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

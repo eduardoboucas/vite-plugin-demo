@@ -4,14 +4,14 @@ import { generateBlob } from "./utils";
 import type { BlobProps } from "./types.ts";
 
 interface Props {
-  lastMutationTime: number;
+  lastMutationTime: number | undefined;
 }
 
 export default function StoredShapes(props: Props) {
   const { lastMutationTime } = props;
   const [keys, setKeys] = useState<string[]>([]);
-  const [selectedKey, setSelectedKey] = useState<string>(null);
-  const [previewData, setPreviewData] = useState<BlobProps>(null);
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  const [previewData, setPreviewData] = useState<BlobProps | null>(null);
 
   const getBlobKeyList = async () => {
     console.log("Fetching keys...");
